@@ -14,8 +14,18 @@ This mod differentiates the internal links from external links and
 [li]automatically adds [color=red]"nofollow"[/color] only for external links[/li]
 [/list]
 
-[color=purple][size=12pt][b]How-To[/b][/size][/color]
-NA.
+[color=purple][size=12pt][b]How-To-Check if this Mod Actually Works in your Forum[/b][/size][/color]
+Go to a thread that has both internal & external links. Right click -> view page source and then search for the internal & external links.
+
+Before installing this mod, the links will appear like
+
+[code]<a href="INTERNAL_LINK" class="bbc_link" target="_blank">INTERNAL LINK</a>
+<a href="EXTERNAL_LINK" class="bbc_link" target="_blank">EXTERNAL LINK</a>[/code]
+
+After installing the mod, the links will appear like
+
+[code]<a href="INTERNAL_LINK" class="bbc_link">INTERNAL LINK</a>
+<a href="EXTERNAL_LINK" class="bbc_link" target="_blank" rel="nofollow">EXTERNAL LINK</a>[/code]
 
 
 [color=purple][size=12pt][b]Supported Themes[/b][/size][/color]

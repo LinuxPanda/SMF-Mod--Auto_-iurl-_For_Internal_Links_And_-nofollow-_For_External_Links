@@ -57,8 +57,7 @@
 						
 						//Check if its an internal url (Added by "Auto_[iurl]_For_Internal_Links_And_NoFollow_For_External_Links" Mod)
 						if (strpos($data, '$domain_id') !== true)
-						$data = preg_replace('~((([a-z]+://)|([a-z]+://)?[a-z0-9.-]+\.|\b)(' . $domain_id . ')[^\s()<>]+)~i', '[iurl]$1[/iurl]', $data);
-						]]></add>
+						$data = preg_replace('~(?<=[\s>\.(;\'"]|^)((?:http|https|)(?::\/\/|)(?:www.|\b)(' . $domain_id . '/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+)~i', '[iurl]$1[/iurl]', $data);]]></add>
 		</operation>
 	</file>
 
