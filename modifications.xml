@@ -41,6 +41,7 @@
 				$lastAutoPos = $pos;
 
 				//Get the domain details of this website (Added by "Auto_[iurl]_For_Internal_Links_And_NoFollow_For_External_Links" Mod)
+				$domain_id = false;
 				$pattern = '~(?:http|https|)(?::\/\/|)(?:www.|)([^/?#]*)?([^?#]*)(\?([^#]*))?(#(.*))?~';
 				if (preg_match($pattern, $scripturl, $matches))
 				$domain_id = $matches[1];]]></add>
@@ -54,10 +55,10 @@
 					<add><![CDATA[
 						// Switch out quotes really quick because they can cause problems.
 						$data = strtr($data, array('&#039;' => '\'', '&nbsp;' => $context['utf8'] ? "\xC2\xA0" : "\xA0", '&quot;' => '>">', '"' => '<"<', '&lt;' => '<lt<'));
-						
+
 						//Check if its an internal url (Added by "Auto_[iurl]_For_Internal_Links_And_NoFollow_For_External_Links" Mod)
 						if (strpos($data, '$domain_id') !== true)
-						$data = preg_replace('~(?<=[\s>\.(;\'"]|^)((?:http|https|)(?::\/\/|)(?:www.|)(?:[0-9A-Za-z\-]+\.|)(' . $domain_id . '/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+)~i', '[iurl]$1[/iurl]', $data);]]></add>
+						$data = preg_replace('~(?<=[\s>\.(;\'"]|^)((?:http|https|)(?::\/\/|)(?:www.|)(?:[0-9A-Za-z\-]+\.|)(' . $domain_id . '/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))*[/\w\-_\~%@\?;=#}\\\\])~i', '[iurl]$1[/iurl]', $data);]]></add>
 		</operation>
 	</file>
 
