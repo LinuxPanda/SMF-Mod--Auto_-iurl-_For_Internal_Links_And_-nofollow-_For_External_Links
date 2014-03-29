@@ -4,7 +4,7 @@
 Mod by xPandax | [url=http://custom.simplemachines.org/mods/index.php?action=profile;u=158159]Other Mods[/url] by xPandax
 [/center]
 [hr]
-[center][url=http://custom.simplemachines.org/mods/index.php?mod=3767]Link to Mod[/url] | [url]Support Thread for this Mod[/url][/center]
+[center][url=http://custom.simplemachines.org/mods/index.php?mod=3767]Link to Mod[/url] | [url=http://www.simplemachines.org/community/index.php?topic=519432.0]Support Thread for this Mod[/url][/center]
 
 
 [color=purple][size=12pt][b]Features[/b][/size][/color]
@@ -41,11 +41,15 @@ NA.
 
 
 [color=purple][size=12pt][b]Support[/b][/size][/color]
-If you need support with this mod, please use the [url]Support Thread for this Mod[/url].
+If you need support with this mod, please use the [url=http://www.simplemachines.org/community/index.php?topic=519432.0]Support Thread for this Mod[/url].
 
- 
+
 [color=purple][size=12pt][b]Changelog[/b][/size][/color]
 [b]v1.0[/b] - Initial release.
+
+
+[color=red][size=12pt][b]Warning[/b][/size][/color]
+If you are using [b]v1.0[/b] of [url=http://custom.simplemachines.org/mods/index.php?mod=3751]Simple Youtube Video Embedder/BBC[/url], then please upgrade to [b]v1.1 or later[/b] before installing this mod to prevent error while mod install/uninstall operations.
 
 
 [hr][center][color=purple][size=14pt][b]License[/b][/size][/color]
